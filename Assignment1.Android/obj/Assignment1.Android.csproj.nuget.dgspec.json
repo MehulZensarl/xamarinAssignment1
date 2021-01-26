@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mehulsinghai/Projects/Assignment1/Assignment1.Android/Assignment1.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/mehulsinghai/Projects/Assignment1/Assignment1.Android/Assignment1.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehulsinghai/Projects/Assignment1/Assignment1.Android/Assignment1.Android.csproj",
+        "projectName": "Assignment1.Android",
+        "projectPath": "/Users/mehulsinghai/Projects/Assignment1/Assignment1.Android/Assignment1.Android.csproj",
+        "packagesPath": "/Users/mehulsinghai/.nuget/packages/",
+        "outputPath": "/Users/mehulsinghai/Projects/Assignment1/Assignment1.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/mehulsinghai/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/mehulsinghai/Projects/Assignment1/Assignment1/Assignment1.csproj": {
+                "projectPath": "/Users/mehulsinghai/Projects/Assignment1/Assignment1/Assignment1.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[2.1.41, )"
+            },
+            "akavache": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/mehulsinghai/Projects/Assignment1/Assignment1/Assignment1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehulsinghai/Projects/Assignment1/Assignment1/Assignment1.csproj",
+        "projectName": "Assignment1",
+        "projectPath": "/Users/mehulsinghai/Projects/Assignment1/Assignment1/Assignment1.csproj",
+        "packagesPath": "/Users/mehulsinghai/.nuget/packages/",
+        "outputPath": "/Users/mehulsinghai/Projects/Assignment1/Assignment1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehulsinghai/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[2.1.41, )"
+            },
+            "akavache": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

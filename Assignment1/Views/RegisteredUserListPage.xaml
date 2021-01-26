@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:Assignment1.Converters"
+             x:Class="Assignment1.Views.NewItemPage"
+             Title="Registered User List">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Close" Clicked="Cancel_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+              <converters:ByteToImageConverter x:Key="ByteToImg" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15" BackgroundColor="White" >
+         <CollectionView x:Name="ItemsCollectionView"
+                ItemsSource="{Binding UserList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                    <Frame Margin="10,20,10,20" Padding="10"  CornerRadius="8" BorderColor="LightGray" HasShadow="False">
+                        <Grid Padding="0" Margin="0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0"  HorizontalOptions="Center" VerticalOptions="Center"  >
+    <Frame CornerRadius="30" 
+           HeightRequest="60"
+           WidthRequest="60"
+           HorizontalOptions="Center"
+           Padding="0" HasShadow="False"
+           IsClippedToBounds="True" BackgroundColor="Gray">
+        <Image Source="{Binding profileImage,Converter={StaticResource ByteToImg}}" 
+           HorizontalOptions="Center" Aspect="AspectFill"
+           VerticalOptions="Center" />
+    </Frame>
+</StackLayout>
+                            
+                                               <StackLayout   Grid.Column="1" Spacing="0" HorizontalOptions="FillAndExpand">
+                                                    <Label Text="{Binding name}" HorizontalOptions="Start" FontAttributes="Bold" />
+                                                                                                       <Label HorizontalOptions="Start" Text="{Binding designation}"  FontAttributes="None"/>
+                                                                                                       <Label HorizontalOptions="Start" Text="{Binding email}" FontSize="Micro" />
+                                                                                                       <Label HorizontalOptions="Start" Text="{Binding mobnumber}" FontSize="Micro"/>
+                                               </StackLayout>    
+                                                    <Grid.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" ></TapGestureRecognizer>
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                    </Frame>
+                        </StackLayout>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
